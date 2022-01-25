@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/instructions.css">
+</head>
+<body>
+	<h1>Ordered List Arrow Cards</h1>
+	<ol class="olcards">
+		<li style="--cardColor:#fc374e">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Checkout the dev_CFM branch from VAST.js</div>
+				<div class="text">https://github.com/imonology/VAST.js/tree/dev_CFM and install the node modules (npm install).</div>
+			</div>
+		</li>
+		<li style="--cardColor:#36aeb3">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Checkout the SPS branch</div>
+				<div class="text"> https://github.com/hebrecht/aedes/tree/SPS and install the node modules (npm install)</div>
+			</div>
+		</li>
+		<li style="--cardColor:#162d59">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Install the local VAST.js module for aedes</div>
+				<div class="text">a.Make sure you are in the aedes directory.
+                <br>
+                b.npm install ${path to local VAST.js module} (npm install ../VAST.js).</div>
+			</div>
+		</li>
+		<li style="--cardColor:#f15f0e">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Ensure that the global_server of VAST.js is running</div>
+				<div class="text">a.Make sure you are in the VAST.js directory
+                    <br>
+                    b.node test/global_server_starter.js.</div>
+			</div>
+		</li>
+        <li style="--cardColor:#f6abb6">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Run the modified MQTT broker that is the gateway</div>
+				<div class="text">a.Make sure you are in the aedes directory
+                    <br>
+                    b.node example/example_VAST_GW.js.</div>
+			</div>
+		</li>
+        <li style="--cardColor:#851e3e">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:36px"></i></div>
+				<div class="title">Run a test subscriber</div>
+				<div class="text">a.Make sure you are in the aedes directory
+                    <br>
+                    b.node example/subscriber.js.</div>
+			</div>
+		</li>
+        <li style="--cardColor:#88d8b0">
+			<div class="content">
+				<div class="icon"><i class="fa fa-hand-o-right" style="font-size:48px"></i></div>
+				<div class="title">Run a test publisher</div>
+				<div class="text">a.Make sure you are in the aedes directory
+                    <br>
+                    b.node example/publisher.js.</div>
+			</div>
+		</li>
+	</ol>
+</body>
+</html>

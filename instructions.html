@@ -87,71 +87,113 @@
               <li><span>Created :</span> Feb, 04, 2022</li>
               <li><span>Last Updated:</span> Feb, 04, 2022</li>
             </ul>
-			<p>
-            <ol>
-              <li>
-                Checkout the dev_CFM branch from VAST.js <br />
-                https://github.com/imonology/VAST.js/tree/dev_CFM and install
-                the node modules (npm install)
-              </li>
-              <li>
-                Checkout the SPS branch from
-                https://github.com/hebrecht/aedes/tree/SPS <br />
-                install the node modules (npm install)
-              </li>
-              <li>
-                Install the local VAST.js module for aedes
-                <br />
-                <ul>
-                  <li>Make sure you are in the aedes directory</li>
-                  <li>
-                    npm install ${path to local VAST.js module} (npm install
-                    ../VAST.js)
-                  </li>
-                </ul>
-              </li>
-			  <li>
-                Ensure that the global_server of VAST.js is running
-                <br />
-                <ul>
-                  <li>Make sure you are in the VAST.js directory</li>
-                  <li>
-                    node test/global_server_starter.js
-                  </li>
-                </ul>
-              </li>
-			  <li>
-                Run the modified MQTT broker that is the gateway
-                <br />
-                <ul>
-                  <li>Make sure you are in the aedes directory</li>
-                  <li>
-                    node example/example_VAST_GW.js
-                  </li>
-                </ul>
-              </li>
-			  <li>
-                Run a test subscriber
-                <br />
-                <ul>
-                  <li>Make sure you are in the aedes directory</li>
-                  <li>
-                    node example/subscriber.js
-                  </li>
-                </ul>
-              </li>
-			  <li>
-                Run a test publisher
-                <br />
-                <ul>
-                  <li>Make sure you are in the aedes directory</li>
-                  <li>
-                    node example/publisher.js
-                  </li>
-                </ul>
-              </li>
-            </ol>
-		</p>
+            <div class="guide">
+              <ol>
+                <li>
+                  Checkout the dev_CFM branch from VAST.js <br />
+                  https://github.com/imonology/VAST.js/tree/dev_CFM and install
+                  the node modules (npm install)
+                </li>
+                <li>
+                  Checkout the SPS branch from
+                  https://github.com/hebrecht/aedes/tree/SPS <br />
+                  install the node modules (npm install)
+                </li>
+                <li>
+                  Install the local VAST.js module for aedes
+                  <br />
+                  <ul>
+                    <li>Make sure you are in the aedes directory</li>
+                    <li>
+                      npm install ${path to local VAST.js module} (npm install
+                      ../VAST.js)
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Ensure that the global_server of VAST.js is running
+                  <br />
+                  <ul>
+                    <li>Make sure you are in the VAST.js directory</li>
+                    <li>node test/global_server_starter.js</li>
+                  </ul>
+                </li>
+                <li>
+                  Run the modified MQTT broker that is the gateway
+                  <br />
+                  <ul>
+                    <li>Make sure you are in the aedes directory</li>
+                    <li>node example/example_VAST_GW.js</li>
+                  </ul>
+                </li>
+                <li>
+                  Run a test subscriber
+                  <br />
+                  <ul>
+                    <li>Make sure you are in the aedes directory</li>
+                    <li>node example/subscriber.js</li>
+                  </ul>
+                </li>
+                <li>
+                  Run a test publisher
+                  <br />
+                  <ul>
+                    <li>Make sure you are in the aedes directory</li>
+                    <li>node example/publisher.js</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="widget widget-support-forum">
+                <span class="icon icon-forum"></span>
+                <h3>the subscriber you should see the following:</h3>
+                <h4>eehebrecht:aedes hebrecht$ node example/subscriber.js</h4>
+                <p>
+                  Subscribing to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Spatial MQTT #0<10,10,30><br />
+                  Spatial MQTT #1 <10,10,30><br />
+                  Spatial MQTT #2 <10,10,30><br />
+                  Spatial MQTT #3 <10,10,30><br />
+                  Spatial MQTT #4 <10,10,30><br />
+                  Spatial MQTT #5 <10,10,30><br />
+                  Spatial MQTT #6 <10,10,30><br />
+                  Spatial MQTT #7 <10,10,30><br />
+                  Spatial MQTT #8 <10,10,30><br />
+                  Spatial MQTT #9 <10,10,30><br />
+                  Spatial MQTT #10 <10,10,30>
+                </p>
+              </div>
+              <div class="widget widget-support-forum">
+                <span class="icon icon-forum"></span>
+                <h3>On the publisher you should see the following:</h3>
+                <h4>eehebrecht:aedes hebrecht$ node example/publisher.js</h4>
+                <p>
+                  Publishing message 0 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 1 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 2 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 3 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 4 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 5 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 6 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 7 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 8 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 9 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                  Publishing message 10 to topic: sp:
+                  <{"x":10,"y":10,"radius":30,"channel":1}><br />
+                </p>
+              </div>
+            </div>
           </article>
           <div class="feedback">
             <h3>Was this article helpful to you?</h3>

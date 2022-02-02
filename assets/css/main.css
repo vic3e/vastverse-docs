@@ -191,6 +191,13 @@ a {
 ul {
   padding: 0; }
 
+.guide{
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #43484d;
+}
+
 h1 {
   font-size: 38px;
   font-weight: 300;

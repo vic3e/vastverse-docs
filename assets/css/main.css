@@ -211,11 +211,11 @@ h2 {
   color: #43484d; }
 
 p {
-  font-family: 16px;
+  font-family: 12px;
   line-height: 24px;
   color: #5e6977;
   font-family: "Roboto", sans-serif;
-  font-weight: 900; }
+  font-weight: 300; }
 
 .btn-success {
   background-color: #7dc855;
